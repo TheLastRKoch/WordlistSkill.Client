@@ -18,11 +18,17 @@ class Menu:
 
     def ShowMainMenu(self):
         print("Please select the option to perform")
-        return input("a) Play trivia \nb) See a word example \nc) Save a new word \nd) Remove a word from the list\n")
+        result = input("1) Play trivia \n2) See a word example \n3) Save a new word \n4) Remove a word from the list\n:")
+        os.system("cls")
+        print(result+" selected\n")
+        return result
+
+    def RequestWord(self):
+        return input("Please type a word to continue\n:")
 
     def SearchMenu(self):
         os.system("cls")
         print ("Searching....\n")
 
     def Continue(self, title):
-        return input("Do you want to "+title+"? (y/n)")
+        return input("Do you want to "+title+"? (y/n):")
