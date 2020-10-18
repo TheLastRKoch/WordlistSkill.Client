@@ -7,9 +7,9 @@ class Menu:
 
     def ShowInitialMenu(self):
         os.system("cls")
-        print("================================")
-        print(" Welcome to the WordList Skill")
-        print("================================")
+        print("=============================================\n")
+        print("        Welcome to the WordList Skill\n")
+        print("=============================================")
         print("\n")
 
     def ShowNumberOfWords(self,numberOfWords):
@@ -28,7 +28,12 @@ class Menu:
 
     def SearchMenu(self):
         os.system("cls")
-        print ("Searching....\n")
+        print("Searching....\n")
+
+    def ShowTitle(self, title):
+        print("=============================================\n")
+        print("        "+title+"\n")
+        print("=============================================")
 
     def Continue(self, title):
         return input("Do you want to "+title+"? (y/n):")

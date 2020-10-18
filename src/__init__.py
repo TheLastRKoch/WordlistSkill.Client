@@ -1,9 +1,11 @@
 #!usr/bin/env python
-#__init__.py
+# __init__.py
 
 import os
 import argparse
 import requests
 import json
 
-run_cli()
+from .cli import *
+from .menu import *
+from .wordlist import *

@@ -1,7 +1,9 @@
-import requests
+import json
+from requests import request
+
 
 class WordList:
-    def Request(self, controller, word):
+    def HttpRequest(self, controller, word):
         url = "https://wordlistskill.herokuapp.com/index.php/Wordlist/"+controller+"/"+word
        
         headers = {
@@ -14,10 +16,10 @@ class WordList:
         print(json.dumps(pretty_json, indent=2)+"\n")
 
     def GetExample(self, word):
-        self.Request("Example", word)
+        self.HttpRequest("Example", word)
 
     def AddNewWord(self, word):
-        self.Request("Add", word)
+        self.HttpRequest("Add", word)
 
     def RemoveWord(self, word):
-        self.Request("Remove", word)
+        self.HttpRequest("Remove", word)
