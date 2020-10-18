@@ -1,0 +1,14 @@
+{
+    "Settings":{
+        "Enviroments":{
+            "Development":[
+                "Tocken":"",
+                "URL":"https://google.com"
+            ],
+            "Production":[
+                "Tocken":"",
+                "URL":""
+            ]
+        }
+    }
+}
